@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+    
+}
+
+:root{
+    --negro: #252525;
+    --amarillo: #ffa400;
+    --rojo: #fc2933;
+    --blanco: #FFFFFF;
+}
+
+body{
+background-color: #131415;
+display: flex;
+flex-direction: column;
+gap: 120px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    padding: 30px 100px 0px 30px;
+    background-color: #131415;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.logo-header{
+    width: 76px;
+    height: 79px;
+    cursor: pointer;  
+}
+
+.logo-header:hover{
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 70px;  
+}
+
+.home {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.home-img {
+    width: 24px;
+    height: 24px;    
+    display: flex;
+    cursor: pointer;
+}
+.carrito {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 45px;
+}
+.img-carrito img{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    cursor: pointer;
+}
+
+.img-notificacion img{
+    width: 13px;
+    height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 40%;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 150px;
+    gap: 70px;
+    
+}
+
+.tituto{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+#idPizza{
+    color: #131415;
+}
+
+.error{
+    position: absolute;
+    top: 350px;
+    right: 20px;
+    background-color: white;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.info{
+    margin-top: 20px;
+    border: 1px solid rgb(148, 21, 95);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-agg{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: linear-gradient(to left,#FB103D, #ffa100);
+    border-radius: 1em;
+    height: 20px;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    transition-property: all;
+}
+
+#btn-agg:hover{
+    display: flex;
+    transition: 1s;
+    transition-property: all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.form-pizza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*-----------------*/
+
+/*.form-pizza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-top: 170px;
+}
+
+.titulos{
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
+.titulo1{
+    display: grid;
+    grid-template-columns: 700px;
+    font-size: 60px;
+}
+
+.titulo2{
+    display: grid;
+    grid-template-columns: 500px ;
+    font-size: 40px;
+}
+
+.parrafo{
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 700px;
+}
+
+.boton-vermas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    width: 150px;
+    border-radius: 1em;
+    background: linear-gradient(to left,#FB103D, #ffa100);
+    cursor: pointer;
+}
+
+.boton-vermas:hover{
+    transition: 1s;
+    transition-property: all;
+    transform: scale(1.1)
+}
+
+.imagen-principal{
+    display: flex;
+    position: relative;
+    right: 200px;
+    top: 70px;
+    z-index: 1;
+    height: 400px;
+    
+}
+
+#pizza1{
+    display: flex;
+    width: 300px;
+    position: absolute;
+    height: fit-content;
+}
+
+#pizza2{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    width: 450px;
+    left: 140px;
+    bottom: 130px;
+    height: fit-content;
+}
+
+#recomendados{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.recomenda{
+    display: flex;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.prod-contenedor{
+    display: flex;
+    gap: 20px;
+    background-color: #252525;
+    padding: 25px;
+    border-radius: 1em;
+}
+
+#letra-medio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#img-prod{
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+#btn-agg{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: linear-gradient(to left,#FB103D, #ffa100);
+    border-radius: 1em;
+    height: 20px;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    transition-property: all;
+}
+
+#btn-agg:hover{
+    display: flex;
+    transition: 1s;
+    transition-property: all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.prod-p{
+   color: #767575;
+}
+
+.precio-gradiente{
+    font-weight: 900;
+    background: linear-gradient(to bottom, #FB103D, #ffa100);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;   
+}
+
+#categorias{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.prod-cate{
+   display: flex;
+   gap: 70px;
+}
+
+
+.tit-cate{
+    display: flex;
+}
+
+.produ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    background-color: #252525;
+    padding: 38px;
+    border-radius: 1em;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.produ img {
+    width: 86px;
+}
+#barrita{
+    width: 20px;
+    height: 5px;
+    border-radius: 1em;
+    position: relative;
+    background: linear-gradient(to left,#FB103D, #ffa100);
+    transition: 1s;
+    
+}
+
+#populares{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 100%;
+}
+
+.popus{
+    display: flex;
+}
+
+.produc-popus{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#popus1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #252525;
+    padding: 25px;
+    border-radius: 1em;
+    width: 22%;
+}
+
+#precio-popu1{
+    font-weight: 1000;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #FB103D, #ffa100);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;    
+}
+
+#btn-agg-popu{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    background: linear-gradient(to left,#FB103D, #ffa100);
+    border-radius: 1em;
+    height:  10px;
+    padding: 20px;    
+    top: 20px;
+    transition-property: all;
+}
+
+.precio-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    
+}
+
+#btn-agg-popu:hover{
+    display: flex;
+    transition: 1s;
+    transition-property: all;
+    transform: scale(1.1);
+    cursor: pointer;
+}*/
+
+#footer{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    overflow: visible;
+}
+
+.footer__nav{
+    display: flex;
+    gap: 20px;
+}
+
+.footer__nav__link{
+    color: white;
+}
+
+.footer__text{
+    padding-top: 40px;
+}
+
+.footer__text--strong{
+    font-weight: 700;
+}
+
