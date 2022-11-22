@@ -109,7 +109,6 @@ function showError(error){
   msgError.textContent = error;
   msgError.classList.add("error");
   infopizza.appendChild(msgError);
- 
   
 }
 
